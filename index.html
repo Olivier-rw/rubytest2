@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Kupambana </title>
+  <link href="general_formatting.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="nav">
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle">
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Services</a>
+      <a href="#">Contact us</a>
+    </div>
+  </div>
+<!--
+  <div id=" banner">
+    <div id="top_banner">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">About you</a></li>
+      <li><a href="#">Contact us</a></li>
+    </div>
+    <div id="bottom_banner">
+
+    </div>
+-->
+  </div>
+  <div class="slideshow-container">
+    <div class="mySlides1">
+      <img src="flags-AU.jpg" style="width:100%; height:500px">
+      <div class="text" style="font-family: 'Pridi', serif; font-weight: bold;text-align:left;font-size:30px; color:#000000">Is African Union a necessity? The Africa Report debates may have an answer. Read more on our blog.</div>
+    </div>
+
+    <div class="mySlides1">
+      <img src="black_month.jpg" style="width:100%; height:500px">
+      <div class="text" style="margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);font-family: 'Pridi', serif; font-weight: bold;text-align:left;font-size:30px; color:#000000">"Pan-African Essay" and "Black Poetry" awards presented to the best contests</div>
+    </div>
+
+    <div class="mySlides1">
+      <img src="panafricanism.png" style="width:100%; height:500px">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
+
+  <div id="content">
+  <div id="titles">
+    <center><h1> Who are we </h1>
+      <div id="single_sub">
+    Kupambana is a Pan-Afric social movement organisation founded in 2018 at African Leadership University Rwanda, with an aim of creating love for our continent in the spirit of young educators.
+    We are currently operating at ALU Rwanda, but we are planning to expand our activities to other campuses around African continent.
+  </div >
+    </center>
+  </div>
+
+  <div id="titles">
+    <center><h1> About us </h1>
+      <div id="titles_sub"><h3> Mission </h3>
+    creating African students with patriotic minds and spirits to work towards the greatness of African continent.
+  </div>
+      <div id="titles_sub"><h3> Vision </h3>
+    Vision to become the leading Pan-Afric social movements in university and highschools around the African continent.
+  </div>
+      <div id="titles_sub"><h3> Values </h3>
+      </div>
+    </center>
+  </div>
+  <div id="titles">
+    <center><h1>From our newsletter </h1>
+          <div id="titles_sub">
+            Kupambana's president to attend The Mo Ibrahim's debate about African Union and African integration.
+        <a href="#">Read more</a>
+      </div>
+          <div id="titles_sub">
+        Kupambana Afrika Immortalizes Mama Winnie Mandela in our official tribute.
+        <a href="https://www.google.rw/">Read more</a>
+      </div>
+          <div id="titles_sub">
+            Kupambana competitions for the first time were held at ALU Rwanda's campus.
+          <br><a href="#">Read more</a>
+          </div>
+        </center>
+      </div>
+  <div id="titles">
+    <center><h1> Join us </h1>
+    Interested in being part of this Africa changing community?
+    Please apply here to join us.<br>
+    <button>Apply here</button>
+    </center>
+
+  </div>
+  </div>
+  <hr>
+  <div class='hello' id="footer">
+      <h3> Contact us </h3>
+      <ul value="Contact us" class="footer_links">
+        <ul class= "footer_links_aboutus">
+          <li>About Kupambana</li>
+          <li>Meet our team</li>
+
+          <li>Join us</li>
+        </ul>
+        <ul class= "footer_links_services">
+          <li>Events</li>
+          <li>Newsletter</li>
+          <li>Blog</li>
+        </ul>
+        <ul class= "footer_links_contactus">
+          <li>Leave a message</li>
+          <li>Email us</li>
+        </ul>
+      </ul>
+
+
+  </div>
+
+  <div id="bottom_footer">
+<hr>
+      <center><p> Copyright Kupambana Afrika 2018 |
+
+        Proudly developed by <a href="#">Futured Developers</a>
+      </p></center>
+
+  </div>
+
+
+
+  <script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+  </script>
+</body>
+</html>
